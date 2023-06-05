@@ -37,7 +37,7 @@ function Nav() {
                             <i className="fas fa-home-alt fa-fw me-2"></i>Pokemons REST
                         </NavLink>
                         <NavLink href="/soap" exact className={`list-group-item list-group-item-action py-2 ripple ${location=='/soap'?`active`:``}`}>
-                            <i className="fas fa-home-alt fa-fw me-2"></i>Marvel SOAP
+                            <i className="fas fa-home-alt fa-fw me-2"></i>API SOAP
                         </NavLink>                      
                     </div>
                 </div>
