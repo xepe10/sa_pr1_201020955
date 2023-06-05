@@ -1,0 +1,101 @@
+a { cursor: pointer; }
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+body {
+background-color: #fbfbfb;
+}
+@media (min-width: 991.98px) {
+main {
+padding-left: 240px;
+}
+}
+
+.form-control {
+    border: 1px solid #bababa !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #47AC34;
+    border-color: #47AC34;
+}
+
+/* Sidebar */
+.sidebar {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+padding: 58px 0 0; /* Height of navbar */
+box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+width: 240px;
+z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+.sidebar {
+width: 100%;
+}
+}
+.sidebar .active {
+border-radius: 5px;
+box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+position: relative;
+top: 0;
+height: calc(100vh - 48px);
+padding-top: 0.5rem;
+overflow-x: hidden;
+overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+/* React Admin */
+.RaLayout-contentWithSidebar {
+    padding-left: 0px;
+}
+
+.RaSidebar-docked {
+    display: none;
+}
+
+.MuiTablePagination-selectLabel.css-pdct74-MuiTablePagination-selectLabel {
+    margin-bottom: 0px;
+    color: #464646;
+}
+
+.MuiTablePagination-selectLabel.css-pdct74-MuiTablePagination-selectLabel {
+    text-indent: -9999px;
+    line-height: 0; /* Collapse the original line */
+}
+
+.MuiTablePagination-selectLabel.css-pdct74-MuiTablePagination-selectLabel::after {
+    content: "Registros por página";
+    text-indent: 0;
+    display: block;
+    line-height: initial; /* New content takes up original line height */
+}
+
+
+.MuiTablePagination-displayedRows.css-levciy-MuiTablePagination-displayedRows {
+    margin-bottom: 0px;
+    color: #464646;
+}
+
+.MuiSelect-select.MuiTablePagination-select.MuiSelect-standard.MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input {
+    color: #464646;
+}
